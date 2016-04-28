@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CareLinkUSB-Jungo-Control", "CareLinkUSB-Jungo-Control\CareLinkUSB-Jungo-Control.vbproj", "{7C2F62C2-A99E-4384-89D9-74DDBE584585}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "usb_lib_dotnet", "usb_lib_dotnet\usb_lib_dotnet.csproj", "{F58D28F8-3C28-4067-A2D2-B5E4D148DE10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C2F62C2-A99E-4384-89D9-74DDBE584585}.Debug|x64.ActiveCfg = Debug|x64
+		{7C2F62C2-A99E-4384-89D9-74DDBE584585}.Debug|x64.Build.0 = Debug|x64
+		{7C2F62C2-A99E-4384-89D9-74DDBE584585}.Debug|x86.ActiveCfg = Debug|x86
+		{7C2F62C2-A99E-4384-89D9-74DDBE584585}.Debug|x86.Build.0 = Debug|x86
+		{7C2F62C2-A99E-4384-89D9-74DDBE584585}.Release|x64.ActiveCfg = Release|Any CPU
+		{7C2F62C2-A99E-4384-89D9-74DDBE584585}.Release|x64.Build.0 = Release|Any CPU
+		{7C2F62C2-A99E-4384-89D9-74DDBE584585}.Release|x86.ActiveCfg = Release|Any CPU
+		{7C2F62C2-A99E-4384-89D9-74DDBE584585}.Release|x86.Build.0 = Release|Any CPU
+		{F58D28F8-3C28-4067-A2D2-B5E4D148DE10}.Debug|x64.ActiveCfg = Debug|x64
+		{F58D28F8-3C28-4067-A2D2-B5E4D148DE10}.Debug|x64.Build.0 = Debug|x64
+		{F58D28F8-3C28-4067-A2D2-B5E4D148DE10}.Debug|x86.ActiveCfg = Debug|x86
+		{F58D28F8-3C28-4067-A2D2-B5E4D148DE10}.Debug|x86.Build.0 = Debug|x86
+		{F58D28F8-3C28-4067-A2D2-B5E4D148DE10}.Release|x64.ActiveCfg = Release|x64
+		{F58D28F8-3C28-4067-A2D2-B5E4D148DE10}.Release|x64.Build.0 = Release|x64
+		{F58D28F8-3C28-4067-A2D2-B5E4D148DE10}.Release|x86.ActiveCfg = Release|x86
+		{F58D28F8-3C28-4067-A2D2-B5E4D148DE10}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

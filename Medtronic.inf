@@ -1,0 +1,54 @@
+; WinUSB installation file for USB device
+
+[Version]
+Signature = "$Windows NT$"
+Class     = USBDevice
+ClassGUID = {88BAE032-5A81-49f0-BC3D-A4FF138216D6}
+Provider  = %ManufacturerName%
+CatalogFile = WinUSBInstallation.cat
+DriverVer=09/04/2012,13.54.20.543
+
+; ========== Manufacturer/Models sections ===========
+[Manufacturer]
+%ManufacturerName%=Standard,NTx86,NTarm,NTamd64
+
+[Standard.NTx86]
+%DeviceName% =USB_Install, USB\VID_0A21&PID_8001
+
+[Standard.NTamd64]
+%DeviceName% =USB_Install, USB\VID_0A21&PID_8001
+
+[Standard.NTarm]
+%DeviceName% =USB_Install, USB\VID_0A21&PID_8001
+
+; ========== Class definition ===========
+[ClassInstall32]
+AddReg = ClassInstall_AddReg
+
+[ClassInstall_AddReg]
+HKR,,,,%ClassName%
+HKR,,NoInstallClass,,1
+HKR,,IconPath,%REG_MULTI_SZ%,"%systemroot%\system32\setupapi.dll,-20"
+HKR,,LowerLogoVersion,,5.2
+
+; =================== Installation ===================
+[USB_Install]
+Include = winusb.inf
+Needs   = WINUSB.NT
+
+[USB_Install.Services]
+Include =winusb.inf
+Needs   = WINUSB.NT.Services
+
+[USB_Install.HW]
+AddReg=Dev_AddReg
+
+[Dev_AddReg]
+HKR,,DeviceInterfaceGUIDs,0x10000,"{a5dcbf10-6530-11d2-901f-00c04fb951ed}"
+
+; =================== Strings ===================
+[Strings]
+ManufacturerName="Medtronic"
+ClassName="Universal Serial Bus devices"
+DeviceName="CareLink USB"
+REG_MULTI_SZ = 0x00010000
